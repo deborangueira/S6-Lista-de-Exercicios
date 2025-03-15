@@ -15,7 +15,7 @@ c) A saída será undefined seguido de undefined
 
 d) A saída será erro em ambas as linhas que utilizam console.log
 
-RESPOSTA
+**RESPOSTA**
 Alternativa correta: letra "a"
 Justificativa: O resultado é primeiro undefined pois mesmo que a variável "var" é reconhecida fora do escopo, o valor de x não segue essa lógica e, ao vim abaixo do console.log(), não é identificado como sendo uma atribuição a variável. No que se refere ao "let", o resultado é undefined pois nem a variável nem o valor podem ser acessadas fora do escopo.
 
@@ -40,6 +40,7 @@ c) Substituir if (a || b === 0) por if (a && b === 0)
 
 d) Remover completamente a verificação if (a || b === 0)
 
+**RESPOSTA**
 Alternativa correta: letra "a"
 Justificativa:  considerando que o objetivo é que o código exiba “Erro: número inválido ” no caso de “a” ou “b” serem iguais a zero devemos corrigir o código. Da forma que está , qualquer valor que entrar em “a” definirá a função como true pois só o “b” foi escrito de forma que a condição para ele seja ser igual a zero. Utilizando o “ a === 0 || b ===0”, entende-se que no caso de a ser zero ou b ser zero, o console deve exibir a mensagem de texto definida em return. 
 ______
@@ -75,7 +76,7 @@ c) O código imprime 50.
 
 d) O código gera um erro.
 
-RESPOSTA:
+**RESPOSTA**
 Alternativa correta: b
 Justificativa: A função calcularPreço é executada utilizando a variável "eletrônico", a ideia seria que fosse exibido o preço de 1000 referente ao eletrônico, contudo o console.log exibe o valor da última variável posicionada antes da interrupção que é definida por "break", sendo ela, portanto, a variável "vestuário" de preço 200.
 ______
@@ -95,7 +96,7 @@ c) 18
 
 d) 24
 
-RESPOSTA:
+**RESPOSTA**
 Alternativa correta: d
 Justificativa: O array que foi guardado na variável "número" é utilizado dentro na variável resultado, contudo, esses números sofrem manipulação e seleção. Através o ".map" todos os números sofrem multiplicação por dois, depois são filtrados todos aqueles acima de 5 por meio do ".filter". Em seguida, por meio do "reduce", os números são somados seguindo a seguinte lógica: 0 + o primeiro número da lista, depois o resultado com o segundo número da lista e assim por diante até o último ítem.
 ______
@@ -117,7 +118,7 @@ c) ["banana", "abacaxi", "manga", "laranja"]
 
 d) ["banana", "maçã", "uva", "abacaxi", "manga"]
 
-RESPOSTA:
+**RESPOSTA**
 Alternativa correta - Letra "c".
 Justificativa - o "splice" altera o conteúdo de uma lista, nesse sentido, ele adiciona elementos enquanto remove outros. Nessa questão, foi removido os itens da posição 1 e 2, e em seus lugares foram postos os ítens "abacaxi" e "manga" respectivamente. Ou seja, os ítens das extremidades foram mantidos (posição 0 e 3) e os do centro foram trocados.
 ______
@@ -134,7 +135,7 @@ c) A primeira afirmação é verdadeira, e a segunda é falsa.
 
 d) A primeira afirmação é falsa, e a segunda é verdadeira.
 
-RESPOSTA:
+**RESPOSTA**
 Alternativa correta - Letra "a".
 Justificativa - A herança é uma característica da programação orientada a objetos, e funciona da forma que está escrito no ítem a. Nesse sentido, para que determinada classe herde um conjunto de métodos e propriedades de outra, a chamada deve ser feita com a palavra "extends". Na frase abaixo, por exemplo, estamos dizendo que a classe herda todos os métodos e propriedades do framework do phaser e, assim, o programador poderá utilizar vários recursos dela, como as funções: "class cenaJogo extends Phaser.Scene {}"
 ______
@@ -179,7 +180,7 @@ c) Apenas II é verdadeira.
 
 d) Apenas I é verdadeira.
 
-RESPOSTA:
+**RESPOSTA**
 Alternativa correta - Letra "a".
 Justificativa - A afirmação I é verdadeira pois no código foi incluído os trexos de código: "extends Pessoa" e "super(nome, idade)". Também é verdadeira a afirmação II, e nesse caso a adição de um novo método "apresentar()" redefiniu o original e, portanto, o sobrescreveu . A terceira é falsa, pois o JavaScript é uma linguagem que permite programação orientada a objetos.
 
@@ -198,7 +199,7 @@ c) A asserção é verdadeira e a razão é verdadeira, mas a razão não explic
 
 d) A asserção é verdadeira e a razão é verdadeira, e a razão explica a asserção.
 
-RESPOSTA:
+**RESPOSTA**
 Alternativa correta - Letra "b".
 Justificativa - A "asserção" está correta pois, em POO, podemos definir respostas diferentes para um mesmo método que está sendo usado em diferentes classes. A "razão", por sua vez, está incorreta pois, em javaScript, o último método sempre sobrecreve os anteriores e, por isso, não é possível que o mesmo método gere respostas diferentes para cada objeto diferente que utiliza-o.
 ______
@@ -217,7 +218,7 @@ function somaArray(numeros) {
 console.log(somaArray([1, 2, 3, 4]));
 ```
 
-RESPOSTA:
+**RESPOSTA**
 ```javascript
 
 function somaArray(numeros) {
@@ -240,7 +241,7 @@ ______
 
 Explique como funciona a herança nesse contexto e como você implementaria a modificação do método na classe `Livro`.
 
-RESPOSTA:
+**RESPOSTA**
 Explicação: a herança ocorre por meio do uso do "extends" na linha onde criei a classe livro, seguido pelo "super" que chama o construtor da classe pai. Além disso, a modificação do método na classe "Livro" foi realizada no método "calcularDesconto" por meio de uma sobrescrita.
 Código:
 ```javascript
